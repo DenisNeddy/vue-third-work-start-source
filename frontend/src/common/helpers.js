@@ -7,7 +7,7 @@ import timeStatuses from './enums/timeStatuses';
 import taskStatuses from './enums/taskStatuses';
 
 export const getTagsArrayFromString = tags => {
-    const array = tags.slit(TAG_SEPARATOR);
+    const array = tags.split(TAG_SEPARATOR);
     return array.slice(1, array.length)
 }
 
